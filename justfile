@@ -8,4 +8,4 @@ pack:
   vsce pack
 
 gh-release:
-  gh release create $(VERSION) evaics-$(VERSION).vsix -t $(VERSION)
+  echo "" | gh release create v{{VERSION}} evaics-{{VERSION}}.vsix -t v{{VERSION}}
