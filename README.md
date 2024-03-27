@@ -1,4 +1,4 @@
-# EVA ICS Code Generator
+# EVA ICS Plugin for Visual Studio Code
 
 The extension is used to generate code for [EVA ICS](https://www.eva-ics.com/).
 
