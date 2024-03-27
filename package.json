@@ -1,0 +1,76 @@
+{
+  "name": "evaics",
+  "displayName": "EVA ICS",
+  "description": "",
+  "version": "0.1.1",
+  "publisher": "Bohemia Automation",
+  "repository": "https://github.com/eva-ics/eva4",
+  "category": "Programming Languages",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "properties": {
+    "evaics.apiUrl": {
+        "type": "string",
+        "default": "",
+        "description": "EVA ICS API URL"
+    },
+    "evaics.apiKey": {
+        "type": "string",
+        "default": "",
+        "description": "API Key for authentication"
+    },
+    "evaics.rustGeneratorConfig": {
+      "type": "string",
+      "default":  {
+        "box_arrays": 100,
+        "derive_debug": true,
+        "derive_default": true,
+        "derive_clone": true,
+        "derive_copy": false,
+        "derive_eq": true,
+        "binrw": "native"
+      },
+      "description": "Rust code generator configuration"
+    }
+  },
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "evaics.generateStruct",
+        "title": "EVA ICS DO: Generate a C/Rust structure"
+      },
+      {
+        "command": "evaics.generateWERState",
+        "title": "EVA ICS WER: Generate state for a EVA ICS item"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.87.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vscode/test-cli": "^0.0.6",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@eva-ics/webengine": "^0.6.3"
+  }
+}
