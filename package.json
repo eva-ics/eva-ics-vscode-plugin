@@ -3,7 +3,7 @@
   "displayName": "EVA ICS",
   "description": "",
   "version": "0.1.1",
-  "publisher": "Bohemia Automation",
+  "publisher": "bohemia-automation",
   "repository": "https://github.com/eva-ics/eva-ics-vscode-plugin",
   "category": "Programming Languages",
   "engines": {
