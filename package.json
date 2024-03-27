@@ -2,8 +2,9 @@
   "name": "evaics",
   "displayName": "EVA ICS",
   "description": "",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "bohemia-automation",
+  "icon": "images/bma.png",
   "repository": "https://github.com/eva-ics/eva-ics-vscode-plugin",
   "category": "Programming Languages",
   "engines": {
@@ -15,18 +16,18 @@
   "activationEvents": [],
   "properties": {
     "evaics.apiUrl": {
-        "type": "string",
-        "default": "",
-        "description": "EVA ICS API URL"
+      "type": "string",
+      "default": "",
+      "description": "EVA ICS API URL"
     },
     "evaics.apiKey": {
-        "type": "string",
-        "default": "",
-        "description": "API Key for authentication"
+      "type": "string",
+      "default": "",
+      "description": "API Key for authentication"
     },
     "evaics.rustGeneratorConfig": {
       "type": "string",
-      "default":  {
+      "default": {
         "box_arrays": 100,
         "derive_debug": true,
         "derive_default": true,
