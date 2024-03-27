@@ -4,7 +4,7 @@
   "description": "",
   "version": "0.1.1",
   "publisher": "Bohemia Automation",
-  "repository": "https://github.com/eva-ics/eva4",
+  "repository": "https://github.com/eva-ics/eva-ics-vscode-plugin",
   "category": "Programming Languages",
   "engines": {
     "vscode": "^1.87.0"
