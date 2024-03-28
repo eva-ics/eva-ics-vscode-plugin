@@ -27,7 +27,7 @@ The extension is used to generate code for [EVA ICS](https://www.eva-ics.com/).
 ```json
 "evaics.apiUrl": "http://host:port",
 "evaics.apiKey": "secretkey",
-"evaics.rustGeneratorConfig": {
+"evaics.DO_rustGeneratorConfig": {
   "binrw": "native",
   "box_arrays": 100,
   "derive_clone": true,
@@ -42,8 +42,9 @@ Where:
 * `evaics.apiKey` - API key with [admin or developer
   permissions](https://info.bma.ai/en/actual/eva4/aaa.html#access-control-list)
 
-* `evaics.rustGeneratorConfig` - [Rust generator
-  configuration](https://info.bma.ai/en/actual/eva4/dobj.html#rust)
+* `evaics.DO_rustGeneratorConfig` - [Rust generator
+  configuration for Data
+  Objects](https://info.bma.ai/en/actual/eva4/dobj.html#rust)
 
 ## Usage
 

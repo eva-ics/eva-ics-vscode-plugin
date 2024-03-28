@@ -13,7 +13,7 @@ export const disposable_generateStruct = () => {
 		let lang_config: any = null;
 		switch (fileType) {
 			case "rust":
-				lang_config = config.get("rustGeneratorConfig");
+				lang_config = config.get("DO_rustGeneratorConfig");
 				break; 
 		}
 		vscode.window.showQuickPick(eva.call("dobj.list")

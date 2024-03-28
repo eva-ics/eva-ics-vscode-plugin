@@ -24,7 +24,7 @@
       "default": "",
       "description": "API Key for authentication"
     },
-    "evaics.rustGeneratorConfig": {
+    "evaics.DO_rustGeneratorConfig": {
       "type": "string",
       "default": {
         "box_arrays": 100,
