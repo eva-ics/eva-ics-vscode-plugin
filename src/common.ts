@@ -10,7 +10,7 @@ export const getEva = (vsConfig?: vscode.WorkspaceConfiguration): typeof Eva => 
 	const apiKey = config.get('apiKey') as string;
 
 	const eva = new Eva();
-	eva.api_uri = apiUrl;
+	eva.api_uri = apiUrl.replace(/\/+$/, "");
 	eva.api_token = apiKey;
 	return eva;
 }
