@@ -2,16 +2,15 @@
   "name": "evaics",
   "displayName": "EVA ICS",
   "description": "",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "bohemia-automation",
   "icon": "images/bma.png",
   "repository": "https://github.com/eva-ics/eva-ics-vscode-plugin",
-  "category": "Programming Languages",
   "engines": {
     "vscode": "^1.87.0"
   },
   "categories": [
-    "Other"
+    "Extension Packs"
   ],
   "activationEvents": [],
   "properties": {
